@@ -1,5 +1,13 @@
 # Marlin 3D Printer Firmware
 
+This is my fork for trying to get Marlin 2.0 to work with my Sintron Kossel Mini, modded to add induction Z probe.
+Originally working with an early 1.x version received from the manufacturer.
+Status:
+ - Auto configuration works (its the reason I'm trying 2.0)
+ - Bed levelling (bilinear) isn't perfect
+   - After levelling, z0 is low by a fraction of a mm near the X tower
+   - After levelling, z0 is high near the Y and Z towers
+
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
 ![GitHub contributors](https://img.shields.io/github/contributors/marlinfirmware/marlin.svg)
 ![GitHub Release Date](https://img.shields.io/github/release-date/marlinfirmware/marlin.svg)
