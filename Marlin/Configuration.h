@@ -129,7 +129,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_RAMPS_13_EFB
+  #define MOTHERBOARD BOARD_RAMPS_14_EFB
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -644,23 +644,23 @@
   #endif
 
   // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
-  #define DELTA_PRINTABLE_RADIUS 85.0     // (mm)
+  #define DELTA_PRINTABLE_RADIUS 75.0     // (mm)
 
   // Center-to-center distance of the holes in the diagonal push rods.
-  #define DELTA_DIAGONAL_ROD 218.0        // (mm)
+  #define DELTA_DIAGONAL_ROD 225.0        // (mm)
 
   // Distance between bed and nozzle Z home position
-  #define DELTA_HEIGHT 246.15             // (mm) Get this value from G33 auto calibrate
+  #define DELTA_HEIGHT 246.89             // (mm) Get this value from G33 auto calibrate
 
-  #define DELTA_ENDSTOP_ADJ { 0.0, 0.0, 0.0 } // Get these values from G33 auto calibrate
+  #define DELTA_ENDSTOP_ADJ { -1.16, -0.54, 0 } // Get these values from G33 auto calibrate
 
   // Horizontal distance bridged by diagonal push rods when effector is centered.
-  #define DELTA_RADIUS 101.0              // (mm) Get this value from G33 auto calibrate
+  #define DELTA_RADIUS 116.52              // (mm) Get this value from G33 auto calibrate
 
   // Trim adjustments for individual towers
   // tower angle corrections for X and Y tower / rotate XYZ so Z tower angle = 0
   // measured in degrees anticlockwise looking from above the printer
-  #define DELTA_TOWER_ANGLE_TRIM { 0.0, 0.0, 0.0 } // Get these values from G33 auto calibrate
+  #define DELTA_TOWER_ANGLE_TRIM { -1.22, +1.30, -0.08 } // Get these values from G33 auto calibrate
 
   // Delta radius and diagonal rod adjustments (mm)
   //#define DELTA_RADIUS_TRIM_TOWER { 0.0, 0.0, 0.0 }
@@ -1083,7 +1083,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 35, -21.5, -2.4 } // was 35, -21.5, -1.05 - had to overcompensate somehow
+#define NOZZLE_TO_PROBE_OFFSET { 35, -21.5, -1.05 } // was 35, -21.5, -1.05 - had to overcompensate somehow
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1491,7 +1491,7 @@
 #endif
 
 // Delta only homes to Z
-#define HOMING_FEEDRATE_Z  (45*60)
+#define HOMING_FEEDRATE_Z  (120*60)
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
